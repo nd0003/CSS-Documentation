@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles.css" />
+  <title>CSS Documentation</title>
+</head>
+<!--navbar-->
+<nav id="navbar">
+  <header>
+    <h2><strong><i>CSS</i> {Documentation}</strong></h2>
+  </header>
+  <div id="nav">
+    <a href="#css-intro" class="nav-link">
+      Introduction to CSS
+    </a>
+    <br>
+    <a href="#pre-info" class="nav-link">
+      What you should already know
+    </a>
+    <br>
+    <a href="#basic-css-format" class="nav-link">
+      Basic CSS format
+    </a>
+    <br>
+    <a href="#essential-css-elements" class="nav-link">
+      Essential CSS elements
+    </a>
+    <br>
+    <a href="#basic-css-examples" class="nav-link">
+      Basic examples of CSS
+    </a>
+    <a href="#css-comments" class="nav-link">
+      CSS comments
+    </a>
+    <br>
+    <a href="#further-learning" class="nav-link">
+      Further learning
+    </a>
+  </div>
+</nav>
+<!--main section-->
+<div id="main-doc-section">
+  <main id="main-doc">
+    <section class="main-section" id="css-intro">
+      <header id="main-headers">
+        <h2>Introduction to CSS</h2>
+      </header>
+      <article>
+        <p>
+          <a href="https://en.wikipedia.org/wiki/CSS">Cascading Style Sheets (CSS)</a> is a <a href="https://en.wikipedia.org/wiki/Style_sheet_language">
+            style sheet language</a> used to change the styling/
+          presentation of a markup language such as <a href="https://en.wikipedia.org/wiki/HTML">HyperText Markup Language (HTML)</a>. By using CSS, you can
+          change the layout, colours, fonts, sizes and many other features of a website. CSS was initially created on the 17th of December, 1996 by
+          <a href="https://en.wikipedia.org/wiki/World_Wide_Web_Consortium">World Wide Web Consortium (W3C)</a>. When you create a CSS file, it is saved
+          as a .css file, similar to how HTML is saved as a .html file.
+        </p>
+      </article>
+    </section>
+    <section class="main-section" id="pre-info">
+      <header id="main-headers">
+        <h2>What you should already know</h2>
+      </header>
+      <article>
+        <p>
+          This guide expects that you already know/have the following:
+        <ul>
+          <li>
+            You should be relatively familiar with the basics of HTML. You can learn the required HTML knowledge
+            <a href="https://codepen.io/nd003/full/JjOpBGm">here.</a>
+          </li>
+          <li>Basic experience with computers.</li>
+          <li>Basic networking knowledge (if you plan on publishing your website).</li>
+        </ul>
+        </p>
+      </article>
+    </section>
+    <section class="main-section" id="basic-css-format">
+      <header id="main-headers">
+        <h2>Basic CSS format</h2>
+      </header>
+      <article>
+        <p>
+          Similar to HTML, CSS is written in a certain format. When CSS is applied to an HTML document, it goes inside a &lt;style> tag.
+          Below is an example of the format that CSS is written in.
+        <pre>
+                            <code>
+&lt;style>
+    The HTML element that you are styling will go here. {
+    The CSS styling element will go here: The value of that styling element will go here;
+    You can add more elements as well: You can add as many as you want;
+    }
+&lt;/style>
+                            </code>
+                        </pre>
+        A semicolon is always required at the end of a CSS value, otherwise the browser won't process it.
+        </p>
+      </article>
+    </section>
+    <section class="main-section" id="essential-css-elements">
+      <header id="main-headers">
+        <h2>Essential CSS elements</h2>
+      </header>
+      <article>
+        <p>
+          You will now learn the essential CSS elements and how you can incorporate them into your HTML documents.
+          Below is a list that contains the essential elements. All of the elements listed below will use the format shown above.
+        <pre>
+                            <code>
+&lt;style>
+    Here are all of the basic and essential CSS elements that you'll need to know {
+        font-size: changes the size of the font;
+        font-family: changes the font;
+        color: changes the colour of the font;
+        background-color: changes the colour of the background;
+        background-image: sets the image of a background.
+        text-align: changes the position of the text (left/right/centre/justify);
+        border: creates a box around an element, but to sound very smart and professional it's called a border;
+        padding: creates space around an element and its content inside a defined border;
+        margin: the same thing as padding, but it creates space outside of a defined border;
+        position: changes the positioning method of an element (static/relative/fixed/absolute/sticky);
+        !important: prioritises this styling element over anything else. An example is included below;
+        font-size: 18px !important;
+    }
+&lt;/style>
+                            </code>
+                        </pre>
+        Congratulations! You now know the basic CSS elements.
+        </p>
+      </article>
+    </section>
+    <section class="main-section" id="basic-css-examples">
+      <header id="main-headers">
+        <h2>Basic examples of CSS</h2>
+      </header>
+      <article>
+        <p>
+          In the example below, the styling elements of all h1 tags are being changed.
+        <pre>
+                            <code>
+&lt;style>
+    h1 {
+        font-size: 40px;
+        font-family: font-family:Arial, Helvetica, sans-serif;
+        color: white;
+        background-color: rgb(0, 0, 0);
+        /* ^ That means that the background colour will be black because black contains 0 red, 0 green and 0 blue. */
+        padding: 5px;
+        margin: 10px;
+        position: relative;
+    }
+&lt;/style>
+                            </code>
+                        </pre>
+        In the example below, the styling elements of the "main-doc-section" class are being changed.
+        <pre>
+                            <code>
+&lt;style>
+    .main-doc-section {
+        font-size: 18px;
+        font-family: "Comic Sans MS", "Comic Sans", cursive;
+        position: static;
+        margin: 5px;
+        padding: 10px;
+        background image: url("example.png");
+        color: rgb(5, 4, 10)
+    }
+&lt;/style>
+                            </code>
+                        </pre>
+        In the example below, the styling elements of the "section-main" id are being changed.
+        <pre>
+                            <code>
+&lt;style>
+    #section-main {
+        font-size: 18px;
+        font-family: "Comic Sans MS", "Comic Sans", cursive;
+        position: static;
+        margin: 5px;
+        padding: 10px;
+        background image: url("example.png");
+        color: rgb(5, 4, 10)
+    }
+&lt;/style>
+                            </code>
+                        </pre>
+        Those are some basic examples of CSS. Feel free to practice some CSS yourself!
+        </p>
+      </article>
+    </section>
+    <section class="main-section" id="css-comments">
+      <header class="main-headers">
+        <h2>CSS comments</h2>
+      </header>
+      <article>
+        <p>
+          You probably know that in HTML, comments are written like this: <code>
+            <!--This is a comment-->
+          </code> (and if you didn't, you know it now.)
+          <br>
+          CSS also has a way of writing comments to make it easier for the user to navigate the .css document or to write whatever you want to.
+          You may have noticed in one of the examples above that I wrote the following:
+          <code>
+            /* ^ That means that the background colour will be black because black contains 0 red, 0 green and 0 blue. */
+          </code>
+          The <code>/* */</code> characters represent a comment in CSS. After the first <code>/* </code> characters, you write whatever you would like to
+          include in the comment. For this example, the comment will include the following text: "Lorem Ipsum." If you wanted to write a CSS comment that
+          contains that text, the comment would look like this: <code>/* Lorem Ipsum */</code>
+          <br>
+          Congratulations, you now know how to write a comment in CSS!
+        </p>
+      </article>
+    </section>
+    <section class="main-section" id="further-learning">
+      <header class="main-headers">
+        <h2>Further learning</h2>
+      </header>
+      <article>
+        <p>
+          You now (hopefully) know the basics of CSS and how CSS works. However, you are no way near being a master in CSS. You still have lots to learn.
+          If would like to learn more about CSS, which I would highly recommend if you have the time, you take the free responsive web design course on
+          <a href="https://www.freecodecamp.org">freeCodeCamp.org</a>. This course teaches you a lot about web development and you will learn a lot about
+          HTML and CSS by taking it. Once you have done the course and you feel like a genius, you will be presented with some challenges that will
+          take away that feeling because you will have forgotten most of what you learnt. However, this is ok. Coding is not about knowing all the syntax
+          instantly. Coding is about learning how things work, solving problems and finding patterns. During the challenges, if you are stuck (because you
+          100% will be), you can research your problem on
+          <a href="https://www.w3schools.com">W3Schools.com</a>. W3Schools has information on every single HTML tag ever created and every single CSS element
+          ever created, you can rely on that when you encounter problems.
+          <br>
+          I hope that you enjoyed this guide and that it helped you.
+          <br>
+          <a href="https://github.com/nd0003/CSS-Documentation" target="_blank">Project source code</a>
+          <br>
+          - <a href="https://www.freecodecamp.org/nd03" target="_blank">nd03</a>
+        </p>
+      </article>
+    </section>
+  </main>
+</div>
+
+</html>

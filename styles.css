@@ -1,0 +1,40 @@
+/* head */
+@import url("https://fonts.googleapis.com/css2?family=Fredoka&family=Share+Tech+Mono&display=swap");
+/* nav */
+#nav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+#nav a {
+  color: rgb(201, 255, 254) !important;
+}
+nav {
+  width: 300px;
+  position: fixed;
+  padding-left: 25px;
+  border: 2px darkcyan;
+}
+/* body */
+html {
+  font-family: "Fredoka", sans-serif;
+  color: white;
+  background-color: rgb(20, 27, 36);
+}
+#main-doc-section {
+  margin-left: 400px;
+  padding-top: 0.08999px;
+}
+p {
+  font-size: 17px;
+}
+code {
+  font-family: "Share Tech Mono", monospace !important;
+  font-size: 16px;
+}
+#main-headers {
+  text-decoration: underline;
+}
+a {
+  color: rgb(255, 252, 196);
+}
